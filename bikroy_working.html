@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bikroy.com — Buy & Sell Anything</title>
+<style>
+:root{color-scheme:light dark;--bg:light-dark(#f4f6f8,#10151b);--surface:light-dark(#fff,#19212a);--surface2:light-dark(#f8fafb,#202a35);--text:light-dark(#18232d,#f1f5f9);--muted:light-dark(#647382,#a8b5c2);--line:light-dark(#e0e6eb,#34414e);--brand:#e84b27;--brand2:#c93819;--green:#176b46;--shadow:0 8px 26px #10203012}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--text)}button,input,select{font:inherit}button{cursor:pointer}.root{min-height:100vh;background:var(--bg)}.topbar{background:#fff;color:#17212b;border-bottom:1px solid #e5e9ed;position:sticky;top:0;z-index:10}.topinner{max-width:1180px;margin:auto;display:flex;align-items:center;gap:24px;padding:14px 22px}.logo{font-weight:900;letter-spacing:-1.6px;font-size:27px;color:#e84b27;white-space:nowrap}.logo span{color:#25313c}.tag{font-size:11px;color:#6a7782;letter-spacing:.1em;font-weight:700;margin-left:7px}.navlinks{display:flex;gap:20px;margin-left:auto;font-size:14px;font-weight:650}.navlinks a{color:#26333e;text-decoration:none}.navlinks a:hover{color:#e84b27}.postbtn{border:0;background:var(--brand);color:#fff;padding:11px 17px;border-radius:9px;font-weight:800;box-shadow:0 4px 12px #e84b2730}.postbtn:hover{background:var(--brand2)}.hero{background:linear-gradient(120deg,#fff5ee,#fff 56%,#eef7f4);color:#1b2934;padding:36px 22px 32px}.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:30px}.eyebrow{display:inline-flex;background:#ffe6dc;color:#ba3b1c;font-size:12px;font-weight:800;padding:7px 10px;border-radius:20px;letter-spacing:.04em}.hero h1{font-size:clamp(32px,4vw,47px);line-height:1.08;letter-spacing:-1.8px;margin:14px 0 12px;max-width:620px}.hero p{color:#65717c;line-height:1.6;max-width:550px;margin:0 0 22px}.searchbox{display:flex;background:#fff;border:1px solid #dce3e7;border-radius:12px;padding:6px;box-shadow:0 8px 22px #25384b10;max-width:660px}.searchbox input{min-width:0;flex:1;border:0;outline:0;padding:12px;color:#17212b;background:transparent}.searchbox select{border:0;border-left:1px solid #e4e8eb;padding:0 10px;background:white;color:#26333e;max-width:145px}.searchbox button{border:0;background:#e84b27;color:#fff;font-weight:800;padding:0 20px;border-radius:8px}.hero-art{height:235px;position:relative;display:grid;place-items:center}.art-circle{width:215px;height:215px;border-radius:50%;background:#ffd8c8;position:absolute;right:38px;top:0}.art-card{position:absolute;background:#fff;border:1px solid #f0d9d0;border-radius:17px;box-shadow:0 18px 45px #763b2420;padding:18px;width:205px}.art-card.one{right:85px;top:25px;transform:rotate(-7deg)}.art-card.two{right:0;top:92px;transform:rotate(6deg);width:170px}.art-icon{font-size:35px}.art-card strong{display:block;margin:6px 0 3px}.art-card small{color:#7b8791}.trust{display:flex;gap:16px;flex-wrap:wrap;margin-top:15px;color:#63717b;font-size:12px}.trust span{display:flex;align-items:center;gap:6px}.wrap{max-width:1120px;margin:0 auto;padding:26px 22px 52px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:0 0 16px}.section-head h2{font-size:21px;letter-spacing:-.5px;margin:0}.section-head p{font-size:13px;color:var(--muted);margin:5px 0 0}.textbtn{border:0;background:transparent;color:var(--brand);font-weight:800}.categories{display:grid;grid-template-columns:repeat(8,1fr);gap:12px;margin-bottom:32px}.cat{border:1px solid var(--line);background:var(--surface);border-radius:13px;padding:15px 8px;text-align:center;transition:.18s;min-width:0}.cat:hover,.cat.active{border-color:#e84b27;transform:translateY(-2px);box-shadow:var(--shadow)}.cat.active{background:light-dark(#fff3ee,#33231f)}.cat .emoji{font-size:26px;display:block;margin-bottom:8px}.cat span:last-child{font-size:12px;font-weight:750}.contentgrid{display:grid;grid-template-columns:220px 1fr;gap:22px}.filters{border:1px solid var(--line);background:var(--surface);border-radius:14px;padding:17px;height:max-content}.filters h3{margin:0 0 15px;font-size:16px}.filtergroup{padding:14px 0;border-top:1px solid var(--line)}.filtergroup label{font-size:12px;font-weight:800;display:block;margin-bottom:9px}.filtergroup select,.filtergroup input{width:100%;border:1px solid var(--line);border-radius:8px;padding:10px;background:var(--surface2);color:var(--text)}.priceinputs{display:flex;gap:7px}.priceinputs input{min-width:0}.checkrow{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin:9px 0}.checkrow input{width:auto;accent-color:#e84b27}.applybtn{width:100%;padding:10px;border:0;border-radius:8px;background:var(--brand);color:#fff;font-weight:800}.listings-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:10px}.listings-head h2{margin:0;font-size:20px}.listings-head select{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:8px;padding:9px}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.product{overflow:hidden;border:1px solid var(--line);border-radius:13px;background:var(--surface);transition:.18s;cursor:pointer;position:relative}.product:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#e8a18d}.photo{height:155px;display:grid;place-items:center;font-size:65px;position:relative;background:linear-gradient(140deg,#f9e8dd,#e9f2ef)}.photo.blue{background:linear-gradient(140deg,#dbeafe,#e8eef5)}.photo.green{background:linear-gradient(140deg,#dcfce7,#edf7f0)}.photo.yellow{background:linear-gradient(140deg,#fff1c7,#f9e9d4)}.photo.purple{background:linear-gradient(140deg,#ede9fe,#f4eafa)}.photo.gray{background:linear-gradient(140deg,#e5e7eb,#f3f4f6)}.condition{position:absolute;left:9px;top:9px;background:#fff;color:#33404b;padding:5px 7px;border-radius:5px;font-size:10px;font-weight:800}.heart{position:absolute;right:9px;top:8px;border:0;border-radius:50%;width:31px;height:31px;background:#fff;color:#4b5965;font-size:17px}.heart.saved{color:#e84b27}.product-info{padding:12px}.product h3{font-size:14px;line-height:1.35;margin:0 0 7px;min-height:38px}.price{font-weight:900;font-size:17px;color:var(--green);margin-bottom:8px}.meta{font-size:11px;color:var(--muted);display:flex;justify-content:space-between;gap:8px}.badge{display:inline-block;font-size:10px;color:#176b46;background:#e3f5eb;padding:4px 6px;border-radius:5px;margin-top:9px;font-weight:800}.empty{padding:35px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:12px;grid-column:1/-1}.loadrow{text-align:center;margin-top:22px}.loadbtn{padding:11px 22px;border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:9px;font-weight:750}.banner{background:#1f3435;color:#fff;border-radius:16px;padding:24px 27px;display:flex;align-items:center;justify-content:space-between;gap:20px;margin:34px 0}.banner h3{font-size:21px;margin:0 0 7px}.banner p{color:#c5d6d4;margin:0;font-size:13px;line-height:1.5}.banner .postbtn{background:#fff;color:#1f3435;box-shadow:none;white-space:nowrap}.footer{background:var(--surface);border-top:1px solid var(--line);padding:27px 22px;color:var(--muted);font-size:12px}.footer-inner{max-width:1120px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer strong{color:var(--text)}.modalback{position:fixed;inset:0;background:#0b1622a8;display:none;align-items:center;justify-content:center;padding:20px;z-index:30}.modalback.show{display:flex}.modal{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;width:min(480px,100%);max-height:90vh;overflow:auto;box-shadow:0 24px 80px #0003}.modalhead{display:flex;align-items:center;justify-content:space-between;gap:15px}.modal h2{margin:0 0 8px;font-size:22px}.close{border:0;background:var(--surface2);color:var(--text);border-radius:8px;width:35px;height:35px;font-size:20px}.modal p{color:var(--muted);font-size:13px;line-height:1.5}.formrow{margin:13px 0}.formrow label{display:block;font-size:12px;font-weight:800;margin-bottom:7px}.formrow input,.formrow select{width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;background:var(--surface2);color:var(--text)}.modal .applybtn{margin-top:7px;padding:12px}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#1d2c37;color:white;padding:12px 18px;border-radius:10px;box-shadow:0 10px 35px #0003;display:none;z-index:40;font-size:13px}.toast.show{display:block}@media(max-width:900px){.categories{grid-template-columns:repeat(4,1fr)}.contentgrid{grid-template-columns:190px 1fr}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-art{transform:scale(.85);transform-origin:center right}.navlinks{gap:12px}}@media(max-width:650px){.topinner{gap:12px;padding:12px 15px}.tag,.navlinks{display:none}.postbtn{margin-left:auto;padding:10px 12px}.hero{padding:28px 16px}.hero-inner{grid-template-columns:1fr}.hero-art{display:none}.searchbox{flex-wrap:wrap}.searchbox input{flex-basis:100%;padding:11px}.searchbox select{flex:1;border-left:0;border-top:1px solid #eee;padding:11px 6px;max-width:none}.searchbox button{padding:11px 14px}.wrap{padding:22px 15px 38px}.categories{gap:8px}.cat{padding:12px 4px}.cat .emoji{font-size:23px}.cat span:last-child{font-size:10px}.contentgrid{grid-template-columns:1fr}.filters{display:grid;grid-template-columns:repeat(2,1fr);gap:0 12px}.filters h3{grid-column:1/-1}.filtergroup{padding:10px 0}.filtergroup:last-of-type{grid-column:1/-1}.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.photo{height:120px;font-size:50px}.product-info{padding:10px}.product h3{font-size:12px}.price{font-size:15px}.meta{font-size:10px;flex-direction:column;gap:3px}.banner{padding:20px;align-items:flex-start;flex-direction:column}.section-head h2{font-size:19px}}
+
+.navsaved{border:1px solid #e0e6eb;background:#fff;color:#26333e;padding:10px 13px;border-radius:9px;font-weight:750;font-size:13px;white-space:nowrap}.navsaved:hover,.navsaved.on{border-color:#e84b27;color:#e84b27}.navsaved b{background:#e84b27;color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:3px}
+.formrow textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:9px;background:var(--surface2);color:var(--text);font:inherit;resize:vertical;min-height:80px}
+.formerr{color:#c0392b;font-size:12px;font-weight:700;min-height:16px;margin-top:4px}
+.dphoto{height:170px;border-radius:12px;display:grid;place-items:center;font-size:84px;margin:14px 0}
+.dprice{font-size:26px;font-weight:900;color:var(--green);margin:4px 0}
+.dmeta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.dmeta span{background:var(--surface2);border:1px solid var(--line);border-radius:20px;padding:5px 10px;font-size:12px;color:var(--muted)}
+.dseller{border:1px solid var(--line);border-radius:12px;padding:12px;margin:14px 0;font-size:13px;color:var(--muted)}.dseller strong{color:var(--text)}
+.dactions{display:flex;gap:8px;flex-wrap:wrap}.dactions button,.dactions a{flex:1;min-width:120px;text-align:center;text-decoration:none;padding:11px;border-radius:9px;border:1px solid var(--line);background:var(--surface2);color:var(--text);font-weight:800;font-size:13px}
+.dactions .primary{background:var(--brand);border-color:var(--brand);color:#fff}.dactions .danger{color:#c0392b;border-color:#e6b0aa}
+.mine{position:absolute;left:9px;bottom:9px;background:#e84b27;color:#fff;font-size:10px;font-weight:800;padding:4px 7px;border-radius:5px}
+.loadbtn[hidden]{display:none}.loadrow{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+@media(max-width:650px){.navsaved{padding:9px 10px}}
+</style>
+</head>
+<body><div class="root">
+<header class="topbar"><div class="topinner"><div class="logo">bikroy<span>.com</span><span class="tag">BUY • SELL • SAVE</span></div><nav class="navlinks"><a href="#categories">Categories</a><a href="#listings">Explore ads</a><a href="#how">How it works</a></nav><button class="navsaved" id="savedBtn">♡ Saved <b id="savedCount">0</b></button><button class="postbtn" id="postTop" style="margin-left:0">＋ Post your ad</button></div></header>
+<section class="hero"><div class="hero-inner"><div><span class="eyebrow">BANGLADESH'S CLASSIFIED MARKETPLACE</span><h1>Find it. Love it.<br>Make it yours.</h1><p>Buy and sell cars, phones, homes and everyday essentials near you. Great finds are closer than you think.</p><div class="searchbox"><input id="searchInput" placeholder="What are you looking for? e.g. iPhone, bike, flat" aria-label="Search listings"><select id="locationSelect" aria-label="Choose location"><option value="All Bangladesh">All Bangladesh</option><option>Dhaka</option><option>Chattogram</option><option>Sylhet</option><option>Rajshahi</option><option>Khulna</option><option>Gazipur</option></select><button id="searchBtn">Search</button></div><div class="trust"><span>✓ Verified-style demo listings</span><span>✓ Local categories</span><span>✓ Easy browsing</span></div></div><div class="hero-art"><div class="art-circle"></div><div class="art-card one"><div class="art-icon">📱</div><strong>Great deals nearby</strong><small>Discover your next favourite</small></div><div class="art-card two"><div class="art-icon">🚲</div><strong>Sell in a snap</strong><small>Post an ad today</small></div></div></div></section>
+<main class="wrap"><section id="categories"><div class="section-head"><div><h2>Browse by category</h2><p>Start with what you're looking for</p></div><button class="textbtn" id="allCategories">View all →</button></div><div class="categories" id="categoryGrid"></div></section>
+<div class="section-head"><div><h2>Popular near you</h2><p>Hand-picked demo listings to explore the marketplace</p></div></div>
+<div class="contentgrid"><aside class="filters"><h3>Filter results</h3><div class="filtergroup"><label for="categoryFilter">CATEGORY</label><select id="categoryFilter"><option value="All">All categories</option></select></div><div class="filtergroup"><label for="locationFilter">LOCATION</label><select id="locationFilter"><option value="All">All locations</option><option>Dhaka</option><option>Chattogram</option><option>Sylhet</option><option>Rajshahi</option><option>Khulna</option><option>Gazipur</option></select></div><div class="filtergroup"><label>PRICE RANGE (৳)</label><div class="priceinputs"><input id="minPrice" type="number" placeholder="Min"><input id="maxPrice" type="number" placeholder="Max"></div></div><div class="filtergroup"><label>LISTING TYPE</label><label class="checkrow"><input type="checkbox" id="verifiedOnly"> Featured listings</label><label class="checkrow"><input type="checkbox" id="usedOnly"> Used items</label></div><button class="applybtn" id="applyFilters">Apply filters</button></aside>
+<section id="listings"><div class="listings-head"><div><h2 id="listingTitle">Latest ads</h2><small id="resultCount" style="color:var(--muted);font-size:12px"></small></div><select id="sortSelect" aria-label="Sort listings"><option value="recommended">Recommended</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div><div class="cards" id="productGrid"></div><div class="loadrow"><button class="loadbtn" id="moreBtn" hidden>Load more ads</button><button class="loadbtn" id="resetBtn">Reset search & filters</button></div></section></div>
+<section class="banner" id="how"><div><h3>Have something to sell?</h3><p>Give your unused things a new home. Create a listing in just a few simple steps.<br>Your ads are saved only in this browser — no server involved.</p></div><button class="postbtn" id="postBanner">＋ Post your ad</button></section>
+</main><footer class="footer"><div class="footer-inner"><div><strong class="logo" style="font-size:19px">bikroy<span>.com</span></strong><p>Student project frontend prototype inspired by online classifieds.</p></div><div>About · Safety tips · Help centre · Contact</div><div>© 2026 Bikroy-style demo. Not the official Bikroy website.</div></div></footer>
+</div>
+<div class="modalback" id="modalBack"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modalhead"><h2 id="modalTitle">Post your ad</h2><button class="close" id="closeModal" aria-label="Close">×</button></div><p id="modalIntro">Show others what you have to offer. Your ad appears in the listings straight away and is saved in this browser only.</p><form id="adForm"><div class="formrow"><label for="adTitle">Ad title</label><input id="adTitle" required placeholder="e.g. Samsung Galaxy phone"></div><div class="formrow"><label for="adCategory">Category</label><select id="adCategory" required></select></div><div class="formrow"><label for="adPrice">Price (৳)</label><input id="adPrice" type="number" min="0" required placeholder="Enter price"></div><div class="formrow"><label for="adLocation">Location</label><select id="adLocation"><option>Dhaka</option><option>Chattogram</option><option>Sylhet</option><option>Rajshahi</option><option>Khulna</option><option>Gazipur</option></select></div><div class="formrow"><label for="adCondition">Type / condition</label><select id="adCondition"><option value="USED">Used</option><option value="NEW">New</option><option value="RENT">For rent</option><option value="SALE">For sale</option><option value="JOB">Job</option></select></div><div class="formrow"><label for="adDesc">Description</label><textarea id="adDesc" maxlength="400" placeholder="Describe your item (optional)"></textarea></div><div class="formrow"><label for="adPhone">Phone (optional)</label><input id="adPhone" inputmode="tel" placeholder="01XXXXXXXXX"></div><div class="formerr" id="formError" role="alert"></div><button class="applybtn" type="submit">Publish ad</button></form></div></div><div class="modalback" id="detailBack"><div class="modal" id="detailBody" role="dialog" aria-modal="true"></div></div><div class="toast" id="toast" role="status"></div>
+<script>
+const categories=[['All','✨'],['Mobiles','📱'],['Vehicles','🚗'],['Property','🏠'],['Electronics','💻'],['Home & Living','🛋️'],['Fashion','👟'],['Jobs','💼']];
+const CAT_EMOJI={Mobiles:'📱',Vehicles:'🚗',Property:'🏠',Electronics:'💻','Home & Living':'🛋️',Fashion:'👟',Jobs:'💼'};
+const CAT_TONE={Mobiles:'blue',Vehicles:'gray',Property:'yellow',Electronics:'purple','Home & Living':'green',Fashion:'blue',Jobs:'yellow'};
+const seed=[
+{id:1,title:'iPhone 13 — 128GB, excellent condition',category:'Mobiles',price:38500,location:'Dhaka',emoji:'📱',tone:'blue',condition:'USED',featured:true,time:'12 min ago'},
+{id:2,title:'Yamaha FZ-S FI V3, well maintained',category:'Vehicles',price:218000,location:'Chattogram',emoji:'🏍️',tone:'gray',condition:'USED',featured:true,time:'28 min ago'},
+{id:3,title:'2 bedroom flat for rent in Mirpur',category:'Property',price:18000,location:'Dhaka',emoji:'🏢',tone:'yellow',condition:'RENT',featured:false,time:'45 min ago'},
+{id:4,title:'HP Core i5 laptop, 8GB RAM, SSD',category:'Electronics',price:32000,location:'Sylhet',emoji:'💻',tone:'purple',condition:'USED',featured:true,time:'1 hour ago'},
+{id:5,title:'Comfortable 3-seater sofa set',category:'Home & Living',price:14500,location:'Gazipur',emoji:'🛋️',tone:'green',condition:'USED',featured:false,time:'2 hours ago'},
+{id:6,title:'New running sneakers — size 42',category:'Fashion',price:2400,location:'Dhaka',emoji:'👟',tone:'blue',condition:'NEW',featured:false,time:'2 hours ago'},
+{id:7,title:'Toyota Axio 2017, registration updated',category:'Vehicles',price:1690000,location:'Dhaka',emoji:'🚘',tone:'gray',condition:'USED',featured:true,time:'3 hours ago'},
+{id:8,title:'Samsung 43-inch Smart TV',category:'Electronics',price:27500,location:'Rajshahi',emoji:'📺',tone:'purple',condition:'USED',featured:false,time:'4 hours ago'},
+{id:9,title:'Office assistant — full-time position',category:'Jobs',price:18000,location:'Khulna',emoji:'💼',tone:'yellow',condition:'JOB',featured:false,time:'5 hours ago'},
+{id:10,title:'Dining table with four chairs',category:'Home & Living',price:8500,location:'Chattogram',emoji:'🪑',tone:'green',condition:'USED',featured:true,time:'6 hours ago'},
+{id:11,title:'iPad 9th generation, 64GB Wi-Fi',category:'Mobiles',price:26500,location:'Dhaka',emoji:'📲',tone:'blue',condition:'USED',featured:false,time:'7 hours ago'},
+{id:12,title:'Family apartment for sale, 1200 sq ft',category:'Property',price:7800000,location:'Dhaka',emoji:'🏡',tone:'yellow',condition:'SALE',featured:true,time:'Yesterday'}
+];
+const PAGE=6;
+const $=id=>document.getElementById(id);
+const money=n=>'৳ '+Number(n).toLocaleString('en-BD');
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let mine=store.get('bk_mine',[]);let saved=new Set(store.get('bk_saved',[]));
+let activeCategory='All',searchTerm='',displayed=[],shown=PAGE,showSaved=false,currentId=null;
+const allItems=()=>[...mine,...seed];
+function timeAgo(ts){const m=Math.floor((Date.now()-ts)/60000);if(m<1)return 'Just now';if(m<60)return m+' min ago';const h=Math.floor(m/60);if(h<24)return h+' hour'+(h>1?'s':'')+' ago';const d=Math.floor(h/24);return d+' day'+(d>1?'s':'')+' ago'}
+const when=p=>p.ts?timeAgo(p.ts):p.time;
+const perMonth=p=>(p.category==='Property'&&p.condition==='RENT')||p.category==='Jobs';
+
+function init(){
+  $('categoryGrid').innerHTML=categories.map(([n,e])=>`<button class="cat ${n==='All'?'active':''}" data-cat="${esc(n)}"><span class="emoji">${e}</span><span>${n==='All'?'All categories':esc(n)}</span></button>`).join('');
+  const opts=categories.filter(c=>c[0]!=='All').map(c=>`<option>${esc(c[0])}</option>`).join('');
+  $('categoryFilter').innerHTML='<option value="All">All categories</option>'+opts;$('adCategory').innerHTML=opts;
+  document.querySelectorAll('[data-cat]').forEach(b=>b.addEventListener('click',()=>chooseCategory(b.dataset.cat)));
+  apply();
+}
+function syncCat(){$('categoryFilter').value=activeCategory;document.querySelectorAll('.cat').forEach(b=>b.classList.toggle('active',b.dataset.cat===activeCategory))}
+function updateSavedCount(){$('savedCount').textContent=saved.size;$('savedBtn').classList.toggle('on',showSaved);$('savedBtn').firstChild.textContent=(showSaved?'♥':'♡')+' Saved '}
+function chooseCategory(cat){activeCategory=cat;syncCat();apply();$('listings').scrollIntoView({behavior:'smooth',block:'start'})}
+
+function apply(reset=true){
+  searchTerm=$('searchInput').value.trim().toLowerCase();
+  const loc=$('locationFilter').value;
+  let min=Number($('minPrice').value)||0,max=Number($('maxPrice').value)||Infinity;
+  if(min>max)[min,max]=[max,min];
+  const featured=$('verifiedOnly').checked,used=$('usedOnly').checked;
+  let arr=allItems().filter(p=>(!showSaved||saved.has(p.id))&&(activeCategory==='All'||p.category===activeCategory)&&(!searchTerm||(p.title+' '+p.category+' '+p.location).toLowerCase().includes(searchTerm))&&(loc==='All'||p.location===loc)&&p.price>=min&&p.price<=max&&(!featured||p.featured)&&(!used||p.condition==='USED'));
+  const sort=$('sortSelect').value;
+  if(sort==='low')arr.sort((a,b)=>a.price-b.price);
+  if(sort==='high')arr.sort((a,b)=>b.price-a.price);
+  displayed=arr;if(reset)shown=PAGE;
+  $('listingTitle').textContent=showSaved?'Saved ads':searchTerm?`Results for “${$('searchInput').value.trim()}”`:(activeCategory==='All'?'Latest ads':activeCategory);
+  $('resultCount').textContent=arr.length+' ad'+(arr.length===1?'':'s')+' found';
+  updateSavedCount();render();
+}
+function render(){
+  const grid=$('productGrid');
+  if(!displayed.length){
+    grid.innerHTML=`<div class="empty"><div style="font-size:34px">${showSaved?'♡':'🔎'}</div><h3>${showSaved?'No saved ads yet':'No matching ads found'}</h3><p>${showSaved?'Tap the heart on any ad to save it here.':'Try another keyword or clear a filter.'}</p></div>`;
+    $('moreBtn').hidden=true;return;
+  }
+  grid.innerHTML=displayed.slice(0,shown).map(p=>`<article class="product" data-id="${p.id}" tabindex="0"><div class="photo ${p.tone}"><span>${p.emoji}</span><span class="condition">${p.condition}</span><button class="heart ${saved.has(p.id)?'saved':''}" data-heart="${p.id}" aria-label="Save listing">${saved.has(p.id)?'♥':'♡'}</button>${p.mine?'<span class="mine">YOUR AD</span>':''}</div><div class="product-info"><h3>${esc(p.title)}</h3><div class="price">${money(p.price)}${perMonth(p)?'<small style="font-size:10px;color:var(--muted);font-weight:500"> / month</small>':''}</div><div class="meta"><span>📍 ${esc(p.location)}</span><span>${when(p)}</span></div>${p.featured?'<span class="badge">★ FEATURED</span>':''}</div></article>`).join('');
+  $('moreBtn').hidden=displayed.length<=shown;
+  $('moreBtn').textContent=`Load more ads (${displayed.length-shown} left)`;
+}
+function toggleSave(id){
+  saved.has(id)?saved.delete(id):saved.add(id);
+  store.set('bk_saved',[...saved]);
+  showToast(saved.has(id)?'Added to your saved listings':'Removed from saved listings');
+  apply(false);if(currentId===id&&$('detailBack').classList.contains('show'))openDetail(id);
+}
+$('productGrid').addEventListener('click',e=>{
+  const h=e.target.closest('[data-heart]');if(h){e.stopPropagation();toggleSave(Number(h.dataset.heart));return}
+  const c=e.target.closest('.product');if(c)openDetail(Number(c.dataset.id));
+});
+$('productGrid').addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.classList.contains('product'))openDetail(Number(e.target.dataset.id))});
+$('moreBtn').addEventListener('click',()=>{shown+=PAGE;render()});
+
+function openDetail(id){
+  const p=allItems().find(x=>x.id===id);if(!p)return;currentId=id;
+  const desc=p.desc||`${p.title}. Located in ${p.location}. Message the seller to ask questions and meet in a safe public place before paying.`;
+  const seller=p.mine?`<strong>You</strong> posted this ad${p.phone?' · '+esc(p.phone):''}`:`<strong>Demo seller</strong> · sample listing, no real contact details`;
+  $('detailBody').innerHTML=`<div class="modalhead"><h2>${esc(p.title)}</h2><button class="close" data-act="close" aria-label="Close">×</button></div><div class="dphoto photo ${p.tone}">${p.emoji}</div><div class="dprice">${money(p.price)}${perMonth(p)?' <small style="font-size:12px;color:var(--muted);font-weight:500">/ month</small>':''}</div><div class="dmeta"><span>📍 ${esc(p.location)}</span><span>🏷️ ${esc(p.category)}</span><span>${p.condition}</span><span>🕒 ${when(p)}</span>${p.featured?'<span>★ Featured</span>':''}</div><p>${esc(desc)}</p><div class="dseller">${seller}</div><div class="dactions"><button class="primary" data-act="contact">${p.mine&&p.phone?'📞 Call seller':'💬 Chat with seller'}</button><button data-act="save">${saved.has(id)?'♥ Saved':'♡ Save'}</button><button data-act="share">🔗 Share</button>${p.mine?'<button class="danger" data-act="delete">🗑 Delete</button>':''}</div>`;
+  $('detailBack').classList.add('show');
+}
+function closeDetail(){$('detailBack').classList.remove('show')}
+$('detailBody').addEventListener('click',e=>{
+  const b=e.target.closest('[data-act]');if(!b)return;
+  const p=allItems().find(x=>x.id===currentId);if(!p)return;
+  const a=b.dataset.act;
+  if(a==='close')closeDetail();
+  else if(a==='save')toggleSave(p.id);
+  else if(a==='contact'){
+    if(p.mine&&p.phone){location.href='tel:'+p.phone.replace(/[^\d+]/g,'')}
+    else showToast('This is a demo listing — real chat is not available.');
+  }
+  else if(a==='share'){
+    const t=`${p.title} — ${money(p.price)} (${p.location})`;
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(()=>showToast('Ad details copied to clipboard'),()=>showToast(t));
+    else showToast(t);
+  }
+  else if(a==='delete'){
+    if(confirm('Delete this ad?')){mine=mine.filter(x=>x.id!==p.id);saved.delete(p.id);store.set('bk_mine',mine);store.set('bk_saved',[...saved]);closeDetail();apply(false);showToast('Ad deleted')}
+  }
+});
+$('detailBack').addEventListener('click',e=>{if(e.target===$('detailBack'))closeDetail()});
+
+function showToast(m){$('toast').textContent=m;$('toast').classList.add('show');clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>$('toast').classList.remove('show'),2600)}
+function openModal(){$('formError').textContent='';$('modalBack').classList.add('show');$('adTitle').focus()}
+function closeModal(){$('modalBack').classList.remove('show')}
+
+$('searchBtn').addEventListener('click',()=>{
+  const l=$('locationSelect').value;$('locationFilter').value=l==='All Bangladesh'?'All':l;
+  showSaved=false;apply();$('listings').scrollIntoView({behavior:'smooth'});
+});
+$('searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')$('searchBtn').click()});
+$('locationFilter').addEventListener('change',()=>{const v=$('locationFilter').value;$('locationSelect').value=v==='All'?'All Bangladesh':v;apply()});
+$('categoryFilter').addEventListener('change',()=>{activeCategory=$('categoryFilter').value;syncCat();apply()});
+$('applyFilters').addEventListener('click',()=>{activeCategory=$('categoryFilter').value;syncCat();apply()});
+['minPrice','maxPrice'].forEach(id=>$(id).addEventListener('input',()=>apply()));
+['verifiedOnly','usedOnly'].forEach(id=>$(id).addEventListener('change',()=>apply()));
+$('sortSelect').addEventListener('change',()=>apply());
+$('allCategories').addEventListener('click',()=>chooseCategory('All'));
+$('savedBtn').addEventListener('click',()=>{showSaved=!showSaved;apply();$('listings').scrollIntoView({behavior:'smooth'})});
+$('resetBtn').addEventListener('click',()=>{
+  $('searchInput').value='';$('locationSelect').value='All Bangladesh';$('locationFilter').value='All';$('minPrice').value='';$('maxPrice').value='';
+  $('verifiedOnly').checked=false;$('usedOnly').checked=false;$('sortSelect').value='recommended';activeCategory='All';showSaved=false;syncCat();apply();window.scrollTo({top:0,behavior:'smooth'});
+});
+['postTop','postBanner'].forEach(id=>$(id).addEventListener('click',openModal));
+$('closeModal').addEventListener('click',closeModal);
+$('modalBack').addEventListener('click',e=>{if(e.target===$('modalBack'))closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();closeDetail()}});
+
+$('adForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const title=$('adTitle').value.trim(),price=Number($('adPrice').value),phone=$('adPhone').value.trim();
+  const err=m=>{$('formError').textContent=m};
+  if(title.length<3)return err('Title must be at least 3 characters.');
+  if(!isFinite(price)||price<0||$('adPrice').value==='')return err('Enter a valid price.');
+  if(phone&&!/^(\+?88)?01[3-9]\d{8}$/.test(phone.replace(/[\s-]/g,'')))return err('Enter a valid Bangladeshi mobile number (01XXXXXXXXX).');
+  const cat=$('adCategory').value;
+  const ad={id:Date.now(),title,category:cat,price,location:$('adLocation').value,emoji:CAT_EMOJI[cat]||'📦',tone:CAT_TONE[cat]||'gray',condition:$('adCondition').value,featured:false,ts:Date.now(),mine:true,desc:$('adDesc').value.trim(),phone};
+  mine.unshift(ad);store.set('bk_mine',mine);
+  e.target.reset();closeModal();
+  $('searchInput').value='';$('locationFilter').value='All';$('locationSelect').value='All Bangladesh';$('minPrice').value='';$('maxPrice').value='';$('verifiedOnly').checked=false;$('usedOnly').checked=false;$('sortSelect').value='recommended';
+  activeCategory='All';showSaved=false;syncCat();apply();$('listings').scrollIntoView({behavior:'smooth'});
+  showToast('✓ Your ad is live at the top of the listings!');
+});
+init();
+</script></body></html>
